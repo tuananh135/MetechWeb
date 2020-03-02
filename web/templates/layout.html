@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}METECH{% endblock title %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> {% block meta%}
+    <meta itemprop="description" name="description" content="" />
+    <meta itemprop="keywords" name="keywords" content="" />
+    <meta property="og:url" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" /> {% endblock %}
+    <!--    Main-style style.css    -->
+    {% block css %}
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:800&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'owl-carousel-dist/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'owl-carousel-dist/assets/owl.theme.default.min.css' %}" rel="stylesheet"> {% endblock %}
+    <!--    Bootstrap4    -->
+    {% block scripts %}
+    <script type="text/javascript" src="{% static 'jquery-dist/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap-dist/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'owl-carousel-dist/owl.carousel.min.js' %}"></script>
+    {% endblock %}
+</head>
+
+<body>
+    {% include 'header.html' %} {% block content %}{% endblock content %}
+</body>
+
+</html>

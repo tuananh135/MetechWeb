@@ -1,0 +1,60 @@
+{% load static %}
+<section>
+    <div class="w-100">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="{% static 'images/slide-frame-1.png' %}" alt="">
+                <div class="description-outstanding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="h-100 col-12 col-md-6 col-lg-4 position-absolute content">
+                                <div class="mt-5">
+                                    <h4>Dịch vụ</h4>
+                                    <p>Chúng tôi có chuyên môn sâu để giúp khách hàng theo cách mới và thú vị</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item"><img src="{% static 'images/slide-frame-2.png' %}" alt="">
+                <div class="description-outstanding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="h-100 col-12 col-md-6 col-lg-4 position-absolute content">
+                                <div class="mt-5">
+                                    <h4>Giá trị cốt lõi</h4>
+                                    <p>Sự chuyên nghiệp và nguồn nhân lực tạo dựng giá trị niềm tin với khách hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item"><img src="{% static 'images/slide-frame-3.png' %}" alt="">
+                <div class="description-outstanding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="h-100 col-12 col-md-6 col-lg-4 position-absolute content">
+                                <div class="mt-5">
+                                    <h4>Đối tác</h4>
+                                    <p>Mang lại những ứng dụng thực tế, tiên tiến và hiện đại tới khách hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            animateOut: 'fadeOut',
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 300000,
+            autoplayHoverPause: true
+        })
+    </script>
+</section>
